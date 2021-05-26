@@ -1,0 +1,21 @@
+{
+  "name": "interactive-resume",
+  "version": "1.0.0",
+  "description": "interactive-resume",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpamurao/interactive-resume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpamurao/interactive-resume/issues"
+  },
+  "homepage": "https://github.com/mpamurao/interactive-resume#readme"
+}
