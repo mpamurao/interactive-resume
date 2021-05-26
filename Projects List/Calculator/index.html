@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="basicMathContainer">
+        <div class="insideContainers" id="addition">
+            <h3>Addition</h3><br>
+
+            <input type="text" id="addInputOne"><br>+ <br>
+            <input type="text" id="addInputTwo"><br>= <br>
+            <span id="sum"></span>
+
+            <button onclick="add()">ADD</button>
+            <div id="addAnswer">Answer Here</div>
+        </div>
+
+        <div class="insideContainers" id="subtraction">
+            <h3>Subtraction</h3><br>
+
+            <input type="text" id="subInputOne"><br> - <br>
+            <input type="text" id="subInputTwo"><br> = <br>
+            <span id="subtraction"></span>
+
+            <button onclick="subtract()">SUBTRACT</button>
+            <div id="subtractAnswer">Answer Here</div>
+        </div>
+
+        <div class="insideContainers" id="division">
+            <h3>Division</h3><br>
+
+            <input type="text" id="divideInputOne"><br> / <br>
+            <input type="text" id="divideInputTwo"><br> = <br>
+            <span id="divide"></span>
+
+            <button onclick="divide()">DIVIDE</button>
+            <div id="divideAnswer">Answer Here</div>
+        </div>
+
+        <div class="insideContainers" id="multiplication">
+            <h3>Multiplication</h3><br>
+
+            <input type="text" id="multiplyInputOne"><br> * <br>
+            <input type="text" id="multiplyInputTwo"><br> = <br>
+            <span id="multiply"></span>
+
+            <button onclick="multiply()">MULTIPLY</button>
+            <div id="multiplyAnswer">Answer Here</div>
+        </div>  
+
+        <div class="insideContainers" id="avg">
+            <h3>Average</h3>
+            <h5> Input numbers you would like to find the average of below: <br></h5>
+            
+            <input type="text" id="averageInputOne"><br><br>
+            <span id="average"></span>
+            
+            <!-- onclick = when the button is clicked, the function is called -->
+            <button onclick="average()">AVERAGE</button>
+            <!-- set div for where the answer will be after clicking AVERAGE -->
+            <div id="avgAnswer">Answer Here</div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

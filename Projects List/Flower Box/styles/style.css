@@ -1,0 +1,86 @@
+body{
+    /* border:1px solid black; */
+    width:50vw;
+    height:50vw;
+    margin:30px;
+    padding:0px;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent{
+    /* border:1px solid rgb(243, 14, 224); */
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    z-index:0;
+    display:grid;
+    grid-template-areas: "box1 box2"
+                         "box3 box4"
+}
+#hi{
+    /* border:1px solid red; */
+    width:50%;
+    height: 50%;
+    position:absolute;
+    font-size: 32pt;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box1{
+    background-color:red;
+    grid-area:box1;
+    animation: rotateLeftBox 10s infinite;
+    transform-origin: top left;
+}
+#box2{
+    background-color:yellow;
+    grid-area:box2;
+    animation: rotateRightBox 10s infinite;
+    transform-origin: top right;
+}
+#box3{
+    background-color:blue;
+    grid-area:box3;
+    animation: rotateRightBox 10s infinite;
+    transform-origin: bottom left;
+}
+#box4{
+    background-color:green;
+    grid-area:box4;
+    animation: rotateLeftBox 10s infinite;
+    transform-origin: bottom right;
+}
+
+@keyframes rotateLeftBox{
+    12%{
+        transform:rotate(0deg);
+    }
+    24%,36%{
+        transform: rotate(90deg);
+    }
+    48%,60%{
+        transform:rotate(0deg);
+    }
+    72%,84%{
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes rotateRightBox{
+    12%{
+        transform:rotate(0deg);
+    }
+    24%,36%{
+        transform: rotate(-90deg);
+    }
+    48%,60%{
+        transform:rotate(0deg);
+    }
+    72%,84%{
+        transform: rotate(-90deg);
+    }
+}

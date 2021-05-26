@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume - Marie Amurao</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="main-header" id="header-name">
+            Marie Amurao
+        </div>
+        <div class="main-header" id="header-about-me">
+        </div>
+    </div>
+
+    <div class="main-body">
+        <div id="body-left-container">
+            <div class="tabs" id="tab-programming">Programming Skills</div>
+            <div class="tabs" id="tab-c">C Language</div>
+            <div class="tabs" id="tab-css">HTML & CSS</div>
+            <div class="tabs" id="tab-javascript">JavaScript</div>
+            
+        </div>
+
+        <div id="body-right-container">
+            <div id="body-nav">
+
+                <a href="#"><div class="projects" onclick="load_default()">Projects</div></a>
+                
+                <div class="list">
+                <a href="#"><li class="project-list" id="list-about-me" onclick="load_aboutMe()">About Me</li>
+                </a>
+                <a href="#"><li class="project-list" id="list-flower-box" onclick="load_flowerBox()">Flower Box</li>
+                </a>
+                <a href="#">
+                    <li class="project-list" id="vending-machine" onclick="load_vendingMachine()">Vending Machine</li>
+                </a>
+                <a href="#">
+                    <li class="project-list" id="list-calculator" onclick="load_calculator()">Calculator</li>
+                </a>
+                <a href="#">
+                    <li class="project-list" id="list-mockup" onclick="load_websiteMockup()">Website Mockup</li>
+                </a>
+                </div>
+            </div>
+
+            <div id="body-content">
+                CLICK ON A PROJECT TO VIEW ITS LAYOUT
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div id="email">
+            <a href="#">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:mpamurao@gmail.com">
+                    <img src="fontawesome-free-5.15.3-desktop/svgs/envelope.svg" 
+                    alt="Email icon" id="email-icon"></a>
+            </a>
+        </div>
+
+        <div id="github">
+            <a href="https://github.com/mpamurao" target="_blank">
+                <i class="fab fa-github"></i>
+                <img src="fontawesome-free-5.15.3-desktop/svgs/github.svg" 
+                    alt="Github icon" id="github-icon">
+            </a>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

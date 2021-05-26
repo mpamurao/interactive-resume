@@ -1,0 +1,37 @@
+.basicMathContainer{
+    width:100vw;
+    height:100vh;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    margin:0 auto;
+    padding:15px;
+}
+
+.insideContainers{
+    border: 3px dotted black;
+    height:50%;
+    width:25%;
+    text-align:center;
+}
+
+input[type=text]:focus{
+    background-color: rgba(70, 63, 63, 0.267);
+}
+
+#addition{
+    color: red;
+}
+
+#subtraction{
+    color:green;
+}
+
+#division{
+    color:blue;
+}
+
+#multiplication{
+    color:purple;
+}
