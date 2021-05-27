@@ -15,7 +15,7 @@ test("Returns response for valid input", () => {
 
 test("Returns response for invalid inputs", () => {
     // if input is not an index in the snack array
-    let invalidInputs = [-1, -2, -3, vendingMachine.snack.length]
+    let invalidInputs = [-1, -2, "vendingMachine", vendingMachine.snack.length]
     invalidInputs.forEach(input => {
         expect(vendingMachine.vend(input))
             .toBe(`Invalid input of ${input}. Please use a number within the range of snacks to request a snack.`);

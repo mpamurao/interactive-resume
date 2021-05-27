@@ -9,7 +9,7 @@ const vendingMachine = {
     // method to print the item in snack array
     vend: (index) => {
             // check for valid input
-            if (index < 0 || index > vendingMachine.snack.length - 1){
+            if (index < 0 || index > vendingMachine.snack.length - 1 || isNaN(index)){
                 return `Invalid input of ${index}. Please use a number within the range of snacks to request a snack.`;
             }
 
